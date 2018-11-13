@@ -1,0 +1,17 @@
+<main class="price">
+    <div class="container container--price">
+        <div class="price--top">
+            <h1 class="price__title">
+                {% block priceTitle %}{% endblock %}
+            </h1>
+            {% block priceNav %}{% endblock %}
+        </div>
+        <div class="price__big-span--wrapper">
+            <span class="price__big-span">
+                {% block priceBigspan %}{% endblock %}
+            </span>
+        </div>
+        {% block priceColumns %}{% endblock %}
+        {% block priceBottom %}{% endblock %}
+    </div>
+</main>

@@ -1,0 +1,81 @@
+$backgroundPrice: '/img/barbershop-index.jpg';
+
+.price {
+    background: url($backgroundPrice) center center repeat/cover;
+    padding: 45px 0;
+    @include large {
+        padding: 55px 0px 80px 0px;
+    }
+}
+
+.price__title {
+    margin-bottom: 15px;
+    @include large {
+        margin-bottom: 30px;
+    }
+}
+
+.container--price {
+    display: flex;
+    flex-direction: column;
+}
+
+.price__big-span--wrapper {
+    display: flex;
+    margin: auto;
+    @include medium {
+        padding: 50px 0 75px 0;
+    }
+}
+
+.price__big-span {
+    position: relative;
+    @include font-size(48);
+    display: none;
+    @include medium {
+        display: flex;
+    }
+}
+
+.price__big-span:before {
+    @include medium {
+        position: absolute;
+        top: 50%;
+        left: -35px;
+        content: '';
+        display: flex;
+        width: 30px;
+        height: 2px;
+        background: $primary;
+    }
+    @include large {
+        left: -103px;
+        width: 80px;
+    }
+    @include extra {
+        left: -183px;
+        width: 160px;
+    }
+}
+
+.price__big-span:after {
+    @include medium {
+        position: absolute;
+        top: 50%;
+        right: -35px;
+        content: '';
+        display: flex;
+        width: 30px;
+        height: 2px;
+        background: $primary;
+    }
+    @include large {
+        right: -103px;
+        width: 80px;
+    }
+
+    @include extra {
+        right: -183px;
+        width: 160px;
+    }
+}

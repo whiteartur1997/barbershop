@@ -1,0 +1,10 @@
+{% macro cardList(img, title) %}
+<li class="shoplist__item">
+  <img src="{{ img }}" alt="">
+  <h4 class="shoplist__title">{{ title }}</h4>
+    <div class="item__price">
+      <span class="shoplist__cost">2000 $</span>
+      <button class="shoplist__buy-btn btn">купить</button>
+    </div>
+</li>
+{% endmacro %}

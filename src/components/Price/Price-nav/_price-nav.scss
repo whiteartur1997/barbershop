@@ -1,0 +1,36 @@
+.price__nav {
+    margin-bottom: 25px;
+}
+
+.price__list {
+    display: flex;
+}
+
+.price__item:not(:last-child) {
+    margin-right: 35px;
+}
+
+.price__item:not(:first-child) {
+   position: relative;
+   
+    &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 36%;
+    left: -27%;
+    width: 7px;
+    height: 7px;
+    background: $primary;
+    transform: rotate(45deg);
+    }
+}
+
+.price__link {
+    text-decoration: none;
+    color: $primary;
+
+    &--gray {
+        color: #aba9a7;
+    }
+}

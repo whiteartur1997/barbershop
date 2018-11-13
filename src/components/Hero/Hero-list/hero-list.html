@@ -1,0 +1,19 @@
+{%
+    set features = [
+    { title: 'Быстро', descr: 'МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ — СЧАСТЛИВЫЙ ОБЛАДАТЕЛЬ СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ!' },
+    { title: 'Круто', descr: 'ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ. МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО! ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.' },
+    { title: 'Дорого', descr: 'НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И НЕ МОГУТ СТОИТЬ ДЕШЕВО. К ТОМУ ЖЕ, РАЗВЕ ЦЕНА НЕ ДАЕТ ОПРЕДЕЛЕНЫЙ СТАТУС?' }
+    ]
+%}
+
+<ul class="hero-list__list reset-list">
+    {% for item in features %}
+    <li class="hero-list__item">
+        <h1 class="hero-list__title">{{ item.title }}</h1>
+        <div class="hero-list__square--wrapper">
+            <div class="hero-list__squared"></div>
+        </div>
+        <p class="hero-list__descr">{{ item.descr }}</p>
+    </li>
+    {% endfor %}
+</ul>

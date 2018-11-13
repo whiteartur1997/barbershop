@@ -1,0 +1,30 @@
+
+.contacts__list {
+  line-height: 1.72;
+  font-style: normal;
+
+  @include smallmax {
+    @include font-size(13)
+    text-align: center;
+  }
+
+}
+
+.contacts__item {
+  text-transform: uppercase;
+  line-height: 1.72;
+
+  &:nth-child(3) {
+    text-decoration: underline;
+  }
+}
+
+.map-link {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.phonenumber {
+  text-decoration: none;
+  color: #fff;
+}

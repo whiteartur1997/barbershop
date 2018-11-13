@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20">
+	<defs>
+		<filter id="flt1"> <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0   0 0 0 1 0" /> </filter>
+		<image width="20" height="20" id="img1" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj48cGF0aCBkPSJNMTggMEgyYTIgMiAwIDAgMC0yIDJ2MTZhMiAyIDAgMCAwIDIgMmgxNmEyIDIgMCAwIDAgMi0yVjJhMiAyIDAgMCAwLTItMnptLTggNmE0IDQgMCAxIDEtNCA0IDQgNCAwIDAgMSA0LTR6TTIuNSAxOGEuNDcuNDcgMCAwIDEtLjUtLjVWOWgyLjFhMy40IDMuNCAwIDAgMC0uMSAxIDYgNiAwIDEgMCAxMiAwIDMuNCAzLjQgMCAwIDAtLjEtMUgxOHY4LjVhLjQ3LjQ3IDAgMCAxLS41LjV6TTE4IDQuNWEuNDcuNDcgMCAwIDEtLjUuNWgtMmEuNDcuNDcgMCAwIDEtLjUtLjV2LTJhLjQ3LjQ3IDAgMCAxIC41LS41aDJhLjQ3LjQ3IDAgMCAxIC41LjV6IiBmaWxsPSIjZmZmIi8+PC9zdmc+"/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<use id="instagram копия" style="filter: url(#flt1)" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
+</svg>

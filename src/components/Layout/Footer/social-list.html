@@ -1,0 +1,14 @@
+{% macro list(items = []) %}
+<ul class="socials__list reset-list">
+  {% for item in items %}
+  <li class="socials__item">
+    <div class="img-wrapper">
+      <a href="{{ item.href }}" class="socials__link">
+          <img src="{{ item.img }}" alt="{{ item.socials }}" class="socials__img--white">
+          <img src="{{ item.imgsecond }}" alt="{{ item.socialssecond }}" class="socials__img--black">
+      </a>
+    </div>
+  </li>
+  {% endfor %}
+</ul>
+{% endmacro %}

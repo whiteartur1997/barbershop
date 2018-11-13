@@ -1,0 +1,91 @@
+.header {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	background: transparent;
+	z-index: 99;
+	color: #fff;
+	@include medium {
+		position: static;
+		background: $primary;
+	}
+}
+
+.container--header {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	align-items: center;
+	@include medium {
+		flex-direction: row;
+	}
+}
+
+
+.enter {
+	display: flex;
+	align-items: center;
+} 
+
+.enter__btn {
+	position: relative;
+	display: flex;
+	padding: 28px 20px 28px 22px;
+	cursor: pointer;
+	&:hover, &:active {
+		background: rgba(255, 255, 255, .2);
+	}
+}
+
+.enter__label {
+	position: absolute;
+	width: 100%;
+	padding: 50px;
+	padding-bottom: 23px;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+	&:hover + .enter__img {
+		fill: #fff;
+	}
+}
+
+.enter__checkbox {
+	display: none;
+} 
+
+.enter__checkbox:checked + .login--view {
+	display: block;
+}
+
+
+.enter__img {
+	display: block;
+	margin-right: 15px;
+	width: 25px;
+	height: 25px;
+	fill: $secondary;
+	@include medium {
+		width: 16px; 
+		height: 16px;
+		fill: #4d4d4d;
+	}
+}
+
+.enter__img:hover {
+	fill: #fff;
+}
+
+.enter__span {
+	display: none;
+	color: #fff;
+	text-decoration: none;
+	@include medium {
+		display: flex;
+	}
+}
+
+.heropage .header .container--header .logo--wrapper {
+	display: none;
+}

@@ -1,0 +1,226 @@
+$backgroundProduct: '../img/barbershop-item.jpg';
+
+.product {
+ background: url($backgroundProduct) center center repeat;
+} 
+
+.product__title {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+	padding-top: 55px;
+	padding-bottom: 30px;
+}
+
+.product__list {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	padding-bottom: 55px;
+
+	@include small {
+	flex-wrap: wrap;
+	padding-bottom: 0px;
+	}
+
+	@include super-small {
+		flex-wrap: wrap;
+		font-size: 12px;
+		padding-bottom: 0;
+	}
+}
+
+.product__items {
+	position: relative;
+	&:not(:last-child) {
+		margin-right: 30px;
+	}
+
+	@include small {
+		margin-bottom: 15px;
+	}
+
+	@include super-small {
+		margin-bottom: 15px;
+	}
+
+	&--gray {
+		color: #b0aeac;
+	}
+}
+
+.product__items:not(:last-child):after {
+	position: absolute;
+	right: -18px;
+	top: 20%;
+	content: '';
+	width: 7px;
+	height: 7px;
+	background: #000;
+	transform: rotate(45deg);
+}
+
+.product__column--wrapper {
+	display: flex;
+	flex-direction: row;
+	
+	@include super-small {
+		flex-direction: column;
+	}
+
+	@include small {
+		flex-direction: column;
+	}
+
+ 
+	@include large {
+		flex-direction: row;
+	}
+}
+
+.product__price--wrapper {
+	display: flex; 
+	padding-bottom: 60px;
+}
+
+.product__btn {
+	background: #000;
+	color: #fff;
+	padding: 16px 16px 16px 19px;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	&:hover, &:active {
+		background: $secondary;
+	}
+}
+
+.product__price {
+	display: flex; 
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	background: #e5e5e5;
+	padding: 16px 33px 16px 37px;
+}
+
+.product__column--left {
+	flex-basis: 50%;
+
+	@include small {
+		margin-top: 20px;
+	}
+
+	@include super-small {
+		margin-top: 15px;
+	}
+}
+
+.product__column--right {
+	flex-basis: 50%;
+	padding-left: 85px;
+	padding-top: 30px;
+
+	@include small {
+		padding-left: 0;
+		margin-bottom: 40px;
+	}
+
+	@include super-small {
+		padding-left: 0;
+		margin-bottom: 40px;
+	}
+
+	@include large {
+		padding-left: 85px;
+	}
+}
+
+.product__span--wrapper {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 35px;
+
+	@include super-small {
+		font-size: 12px;
+		padding-bottom: 20px;
+	}
+}
+
+.product__description {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 35px;
+	font-size: 14px;
+}
+
+.product__set--title {
+	padding-bottom: 35px;
+}
+
+.product__set--list {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 0 17px;
+}
+
+.product__set--item {
+	position: relative;
+
+	&:before {
+		content: '';
+		position: absolute;
+		width: 7px;
+		height: 7px;
+		background: #000;
+		transform: rotate(45deg);
+		left: -15px;
+		top: 20%;
+	}
+}
+
+.product__span--article {
+	color: #b0aeac;
+}
+
+.product__img--large {
+	width: 100%;
+}
+
+.product__img {
+	width: 140px;
+	margin: 20px 0 40px 0;
+	&:not(:last-child){
+		margin-right: 15px;
+	}
+
+	@include medium {
+		width: 103px;
+	}
+
+	
+	@include small {
+		display: none;
+	}
+
+
+	@include super-small {
+		display: none;
+	}
+}
+
+.product__title {
+	@include super-small {
+		font-size: 24px;
+	}
+}
+
+.product__set--title {
+	@include super-small {
+		font-size: 20px;
+	}
+}

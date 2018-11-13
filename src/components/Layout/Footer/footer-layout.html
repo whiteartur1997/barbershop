@@ -1,0 +1,24 @@
+<footer class="footer">
+  <div class="container container--footer">
+    <address class="contacts">
+    {% block navBody %}{% endblock %}
+    </address>
+
+    <div class="socials">
+      <h1 class="socials__title">
+      {% block socialTitle%}{% endblock %}
+      </h1>
+        <div class="socials__icons">
+        {% block socialsBody %}{% endblock %}
+        </div>
+    </div>
+    <div class="development">
+      <h1 class="development__main-title">Разработано:</h1>
+      <div class="devemopment__link-wrapper">
+        <a href="#" class="development__link">HTML Academy</a>
+      </div>
+    </div>
+
+  </div>
+
+</footer>

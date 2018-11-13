@@ -1,0 +1,169 @@
+.footer {
+  background: #242424; /* фон футера это картинка */
+}
+
+.container--footer {
+  display: flex;
+  align-items: start; /* что такое старт и зачем он тут */
+  color: #fff;
+  font-weight: 700;
+  margin: 62px auto 40px auto; /* марджин тут не нужен */
+  @include font-size(14);
+
+  @include smallmax {
+    display: flex;  /* лишняя строка, дисплей флекс дается и так */
+    flex-direction: column;
+    align-items: center;
+    margin: 40px auto 40px auto;
+  }
+ 
+  @include medium {
+    display: flex;
+    align-items: start; /* флекс старт */
+    justify-content: space-between;
+    color: #fff;
+    margin: 62px auto 40px auto;
+    @include font-size(14);
+  }
+
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include smallmax {
+    margin: 30px 0 0 0;
+  }
+
+  @include small {
+    margin: 0 20px 0 0;
+  }
+}
+
+.socials__title {
+    @include font-size(14);
+    text-transform: uppercase;
+    line-height: 1.72;
+
+    @include smallmax {
+      @include font-size(13)
+    }
+}
+
+.socials__icons {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+
+.socials__list {
+  display: flex;
+
+  @include smallmax {
+    margin: -10px 0 0 0;
+  }
+}
+
+.socials__item {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+
+  &:not(:last-child) {
+    margin-right: 6px;
+  }
+}
+
+.socials__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: 0.4s;
+}
+
+.socials__img--black {
+  display: none;
+}
+
+.img-wrapper { /* тут намудрил с картинками, не нужно их делать две штуки */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  width: 43px;
+  height: 43px;
+  margin: 20px 0 0 0;
+  transition: linear 0.4s;
+
+  &:hover .socials__img--white {
+    display: none;
+  }
+
+  &:hover {
+    background: #fff;
+  }
+
+  &:hover .socials__img--black {
+    display: block;
+  }
+}
+
+.development {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include smallmax {
+    margin: 30px 0 0 0;
+  }
+}
+
+.development__main-title {
+  @include font-size(14);
+  text-transform: uppercase;
+  line-height: 1.72;
+
+  @include smallmax {
+    @include font-size(13);
+  }
+}
+
+.devemopment__link-wrapper {
+  background: #000;
+  width: 140px;
+  height: 43px; /* здесь не нужна выоста и ширина*/
+  margin: 20px 0 0 0;
+  display: flex;
+  align-items: center;
+
+  @include smallmax {
+    margin: 10px 0 0 0;
+  }
+}
+
+.development__link {
+  line-height: 1.72;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  width: 140px; /* это нужно было оформить паллингами, как кнопки  */
+  height: 43px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: linear 0.4s;
+
+  &:hover {
+    background: #fff;
+    color: #000;
+  }
+
+  @include smallmax {
+    @include font-size(13);
+  }
+}

@@ -1,0 +1,31 @@
+{% 
+	set items = [
+	{ href: '#', name: 'информация'},
+	{ href: '#', name: 'новости'},
+	{ href: 'price-list.html', name: 'прайс-лист', class: 'nav__link--p'},
+	{ href: 'shop.html', name: 'магазин', class: 'nav__link--m' },
+	{ href: '#', name: 'контакты'}
+	]
+	%}
+
+
+<nav class="nav">
+
+	<button class="nav__btn nav__btn--open">
+			<i class="fas fa-bars"></i>
+	</button>
+
+	<ul class="nav__list">
+
+	<button class="nav__btn nav__btn--close">
+			<i class="fas fa-times"></i> 
+	</button>
+
+		{% for item in items %}
+		<li class="nav__item">
+			<a href="{{ item.href }}" class="nav__link {{ item.class }}">{{ item.name }}</a>
+		</li>
+		{% endfor %}
+	</ul>
+
+</nav>

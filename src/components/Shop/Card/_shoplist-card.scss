@@ -1,0 +1,84 @@
+.shoplist__item {
+  background: #fff;
+  max-width: 220px;
+  height: 100%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  font-weight: 700;
+
+  &:not(:nth-child(3n)) {
+    margin-right: 20px;
+  }
+
+  @include largemax {
+    &:not(:nth-child(3n)) {
+      margin-right: 0px;
+    }
+
+    &:not(:nth-child(2n)) {
+      margin-right: 15px;
+    }
+
+  }
+
+  @include mediummax {
+    &:not(:nth-child(2n)) {
+      margin-right: 0px;
+    }
+  }
+
+  @include smallmax {
+    &:not(:nth-child(3n)) {
+    }
+
+    &:nth-child(2n) {
+      margin-left: 15px;
+    }
+  }
+
+  @include super-smallmax {
+    &:nth-child(2n) {
+      margin-left: 0px;
+    }
+  }
+}
+
+.shoplist__title {
+  box-sizing: border-box;
+  max-width: 160px;
+  margin-top: 15px;
+  text-align: start;
+  text-transform: none;
+  word-wrap: break-word;
+}
+
+.item__price {
+  display: flex;
+  align-items: flex-start;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.shoplist__cost {
+  display: flex;
+  width: 109px;
+  height: 43px;
+  background: #E5E5E5;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.shoplist__buy-btn {
+  height: 43px;
+  width: 78px;
+  background: #000;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: $base-font;
+  font-weight: 700;
+}

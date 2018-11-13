@@ -1,0 +1,8 @@
+.price__columns--wrapper {
+    display: flex;
+    flex-direction: column;
+    @include large {
+        flex-direction: row;
+     /*    justify-content: space-between; */
+    }
+}

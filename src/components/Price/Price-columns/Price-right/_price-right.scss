@@ -1,0 +1,44 @@
+.price-right {
+    display: flex;
+    flex-direction: column;
+    @include large {
+        flex-basis: 50%;
+    }
+}
+
+.price-right__title {
+    margin-bottom: 15px;
+    @include large {
+        margin-bottom: 36px;
+    }
+}
+
+.price-right__list {
+    display: flex;
+    flex-direction: column;
+    @include large {
+        width: 100%;
+    }
+}
+
+.price-right__item {
+    display: flex;
+    border: 2px solid $primary;
+}
+
+.price-right__service, .price-right__price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 13px 10px 15px 10px;
+}
+
+.price-right__service {
+    border-right: 2px solid $primary;
+}
+
+.price-right__item:nth-child(even) {
+    border-top: none;
+    border-bottom: none;
+}

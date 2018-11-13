@@ -1,0 +1,15 @@
+.logo--wrapper {
+    @include smallmax {
+        display: none;
+    }
+    @include small {
+        display: none;
+    }
+    @include large {
+        display: flex;
+    }
+}
+
+.logo__link {
+    display: flex;
+}

@@ -1,0 +1,94 @@
+$breakpoint-super-small: 300px; 
+$breakpoint-small: 576px;
+$breakpoint-medium: 768px;
+$breakpoint-large: 992px;
+$breakpoint-extra: 1200px;
+
+@mixin super-small {
+	@media screen and (min-width: $breakpoint-super-small) {
+		@content;
+	}
+}
+
+@mixin super-smallmax {
+	@media screen and (max-width: $breakpoint-super-small) {
+		@content;
+	}
+}
+
+@mixin small {
+  @media screen and (min-width: $breakpoint-small) {
+    @content;
+  }
+}
+
+@mixin smallmax {
+  @media screen and (max-width: $breakpoint-small) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media screen and (min-width: $breakpoint-medium) {
+    @content;
+  }
+}
+
+@mixin mediummax {
+  @media screen and (max-width: $breakpoint-medium) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media screen and (min-width: $breakpoint-large) {
+    @content;
+  }
+}
+
+@mixin largemax {
+  @media screen and (max-width: $breakpoint-large) {
+    @content;
+  }
+}
+
+@mixin extra {
+  @media screen and (min-width: $breakpoint-extra) {
+    @content;
+  }
+}
+
+
+@mixin placeholder {
+  ::-webkit-input-placeholder {
+    @content;
+  }
+  ::-moz-placeholder {
+    @content;
+  }
+  :-ms-input-placeholder {
+    @content;
+  }
+  :-moz-placeholder {
+    @content;
+  }
+}
+
+@mixin font-size($size) {
+  font-size: $size + px;
+  font-size: $size / 16 + rem;
+}
+
+ @mixin btn {
+   font-family: $base-font;
+    background: #000;
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1;
+    outline: none;
+    cursor: pointer;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }

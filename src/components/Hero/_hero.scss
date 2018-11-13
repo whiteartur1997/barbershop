@@ -1,0 +1,49 @@
+$backgroundHero: '../img/Layer.jpg';
+$backgroundHeroblock: '../img/barbershop-index.jpg';
+
+.hero {
+    width: 100%;
+    height: auto;
+    background: url($backgroundHero) center center no-repeat/cover;
+    padding: 30px 0 30px 0;
+    @include large {
+        padding: 60px 0 70px 0;
+    }
+}
+
+.container--hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-list {
+    display: flex;
+    
+}
+
+
+.hero-block {
+    background: url($backgroundHeroblock) center center repeat/cover;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 5px;
+    @include small {
+        padding: 50px 80px;
+    }
+    @include medium {
+        padding: 40px 60px;
+        flex-direction: row;
+    }
+    @include large {
+        padding: 50px 80px;
+        width: 940px;
+    }
+}
+
+.hero-block__title {
+    margin-bottom: 15px;
+    @include large {
+        margin-bottom: 30px;
+    }
+}

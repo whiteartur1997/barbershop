@@ -1,0 +1,39 @@
+@import "normalize";
+@import "https://use.fontawesome.com/releases/v5.4.2/css/all.css";
+@import "//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css";
+@import "./assets/scss/vars";
+@import "./assets/scss/mixins";
+@import "./assets/scss/default";
+
+@import "./components/Layout/Header/header";
+@import "./components/Logo/logo";
+@import "./components/Login/login";
+@import "./components/Nav/nav";
+@import "./components/Product/product";
+
+@import "./components/Layout/Footer/footer";
+@import "./components/Layout/Footer/Contactlist/contact-list";
+@import "./components/Hero/hero";
+@import "./components/Logo/logo";
+@import "./components/Hero/Hero-list/hero-list";
+
+@import "./components/Shop/shoplist";
+@import "./components/Shop/Card/shoplist-card";
+@import "./components/Shop/Manufacturers/manufacturers";
+@import "./components/Shop/Kinds/shoplist-kinds";
+
+
+@import "./components/Index-logo/index-logo";
+@import "./components/Hero/Hero-list/hero-list";
+@import "./components/Hero/Hero-inform/hero-inform";
+@import "./components/Hero/Hero-inform/Hero-news/hero-news";
+@import "./components/Hero/Hero-inform/Hero-gallery/hero-gallery";
+@import "./components/Hero/Hero-connection/hero-connection";
+@import "./components/Hero/Hero-connection/Hero-address/hero-address";
+@import "./components/Hero/Hero-connection/Hero-forms/hero-forms";
+@import "./components/Price/price";
+@import "./components/Price/Price-nav/price-nav";
+@import "./components/Price/Price-columns/price-columns";
+@import "./components/Price/Price-columns/Price-left/price-left";
+@import "./components/Price/Price-columns/Price-right/price-right";
+@import "./components/Price/Price-bottom/price-bottom";

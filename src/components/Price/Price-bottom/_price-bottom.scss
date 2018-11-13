@@ -1,0 +1,23 @@
+.price-bottom__title {
+    margin: 18px 0;
+    @include large {
+        margin-bottom: 36px;
+    }
+}
+
+.price-bottom__descr--wrapper {
+    line-height: 1.4;
+    @include medium {
+    display: flex;
+    align-items: flex-start;
+    }
+}
+
+
+.price-bottom-descr:not(:last-child) {
+    margin-bottom: 10px;
+    @include medium {
+    margin-right: 15px;
+    margin-bottom: 0;
+    }
+}

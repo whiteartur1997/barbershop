@@ -1,0 +1,94 @@
+.hero-address {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    position: relative;
+    @include medium {
+        flex: 1 0;
+        flex-basis: 250px;
+    }
+    @include large {
+        flex: 1 0 50%;
+        padding-right: 20px;
+    }
+}
+
+.hero-address:after {
+    content: '';
+    width: 3px;
+    height: 238px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: -5px 0px 8px rgba(50, 50, 50, 0.75);
+    position: absolute;
+    top: 50px;
+    right: 0;
+    display: none;
+    @include large {
+        display: block;
+    }
+}
+
+.hero-address__contacts, .hero-address__times {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    @include large {
+        margin-bottom: 30px;
+    }
+}
+
+.hero-address__times {
+    margin-bottom: 34px;
+}
+
+.hero-address__contact, .hero-address__time {
+    margin-bottom: 5px;
+}
+
+.hero-address__contact--tel {
+    text-decoration: none;
+    color: $primary;
+    &:hover, &:active {
+        color: $secondary;
+    }
+}
+
+.hero-address__btn--wrapper {
+    display: flex;
+}
+
+.hero-address__btn {
+    @include btn;
+
+    &:hover {
+        background: $secondary;
+    }
+}
+
+.hero-address__btn--map {
+    padding-left: 27px;
+    padding-right: 27px;
+    margin-right: 10px;
+    @include medium {
+        padding-left: 13px;
+        padding-right: 13px;
+    }
+    @include large {
+        padding-left: 27px;
+        padding-right: 27px;
+    }
+}
+
+.hero-address__btn--connection {
+    padding-left: 22px;
+    padding-right: 22px;
+    @include medium {
+        padding-left: 17px;
+        padding-right: 17px;
+    }
+    @include large {
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+}

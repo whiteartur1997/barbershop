@@ -1,0 +1,46 @@
+.hero-list__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    @include medium {
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    @include large {
+        justify-content: space-between;
+    }
+}
+
+.hero-list__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 280px;
+}
+
+.hero-list__title {
+    margin-bottom: 15px;
+}
+
+.hero-list__square--wrapper {
+    margin-bottom: 25px;
+}
+
+.hero-list__squared {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+.hero-list__descr {
+    margin-bottom: 25px;
+    text-align: center;
+}

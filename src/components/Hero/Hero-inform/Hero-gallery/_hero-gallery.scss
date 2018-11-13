@@ -1,0 +1,52 @@
+.hero-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include medium {
+        align-items: flex-start;
+    }
+    @include large {
+        flex: 1 0 50%;
+        padding-left: 90px;
+    }
+}
+
+.hero-gallery__img--wrapper {
+    display: flex;
+    margin-bottom: 15px;
+    @include large {
+        margin-bottom: 37px;
+    }
+}
+
+.hero-gallery__img {
+    width: 100%;
+    max-width: 310px;
+    max-height: 180px;
+    border: 5px solid #fff;
+}
+
+.hero-gallery__btn--wrapper {
+    display: flex;
+}
+
+.hero-gallery__btn--back, .hero-gallery__btn--forward {
+    @include btn;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    &:active, &:hover {
+        background: $secondary;
+    }
+}
+
+.hero-gallery__btn--back {
+    padding-left: 49px;
+    padding-right: 49px;
+    margin-right: 10px;
+}
+
+.hero-gallery__btn--forward {
+    padding-left: 47px;
+    padding-right: 47px;
+}

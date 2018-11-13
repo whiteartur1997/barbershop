@@ -1,0 +1,8 @@
+{% macro list(items = []) %}
+    {% for item in items %}
+    <li class="leftbar__item">
+      <input id="{{ item.title }}" type="checkbox" class="manufactures__input">
+      <label for="{{ item.title }}" class="manufactures__label text--hover">{{ item.title }}</label>
+    </li>
+    {% endfor %}
+{% endmacro %}

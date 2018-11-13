@@ -1,0 +1,16 @@
+{%
+set navigation = [
+{ name: 'Главная', href: 'index.html' },
+{ nameg: 'Прайс-лист', hrefg: 'price-list.html' }
+]
+%}
+<nav class="price__nav">
+    <ul class="price__list reset-list">
+        {% for item in navigation %}
+        <li class="price__item">
+            <a href="{{ item.href }}" class="price__link">{{ item.name }}</a>
+            <a href="{{ item.hrefg }}" class="price__link price__link--gray">{{ item.nameg }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</nav>

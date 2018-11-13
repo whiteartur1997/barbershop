@@ -1,0 +1,20 @@
+{%
+    set news = [
+    { name: 'НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ', date: '11 января' },
+    { name: 'В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДAТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ
+    СТРОЙНЫЕ РЯДЫ', date: '18 января' }
+    ]
+%}
+
+<div class="hero-news--wrapper">
+    <h1 class="hero-news__title hero-block__title">Новости</h1>
+    {% for item in news %}
+    <article class="hero-news">
+        <a class="hero-news__link" href="#">
+            {{ item.name }}
+        </a>
+        <span class="hero-news__date">{{ item.date }}</span>
+    </article>
+    {% endfor %}
+    <button class="btn hero-news__btn">Все новости</button>
+</div>

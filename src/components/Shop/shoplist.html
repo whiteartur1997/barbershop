@@ -1,0 +1,102 @@
+{% extends 'components/Shop/shoplist-layout.html' %}
+
+{% set manufacturersItems = [
+  {
+    title: 'Baxter of California'
+  }, {
+    title: 'Mr Natty'
+  }, {
+    title: 'Suavecito'
+  }, {
+    title: 'Malin+Goetz'
+  }, {
+    title: 'Murray’s'
+  }, {
+    title: 'American Crew'
+  }
+] %}
+
+{% set kindsItems = [
+  {
+    title: 'Бритвенные принадлежности'
+  }, {
+    title: 'Средства для ухода'
+  }, {
+    title: 'Аксессуары'
+  }
+] %}
+
+{% set cardItems = [
+  {
+    title: 'Набор для путешествий «Baxter of California»',
+    img: 'img/Layer1.png'
+  }, {
+    title: 'Увлажняющий кондиционер
+«Baxter of California»',
+    img: 'img/Layer2.png'
+  }, {
+    title: 'Гель для волос
+«AMERICAN CREW»',
+    img: 'img/Layer3.png'
+  }, {
+    title: 'Глина для укладки волос 
+«American crew»',
+    img: 'img/Layer4.png'
+  }, {
+    title: 'Гель для волос
+«AMERICAN CREW»',
+    img: 'img/Layer5.png'
+  }, {
+    title: 'Набор для бритья
+«Baxter of California»',
+    img: 'img/Layer6.png'
+  }
+] %}
+
+{% set pagelistItems = [
+  {
+    href: '#',
+    title: '1'
+  }, {
+    href: '#',
+    title: '2'
+  }, {
+    href: '#',
+    title: '3'
+  }, {
+    href: '#',
+    title: '4'
+  }
+] %}
+
+{% set pagemap = [
+  {
+    class: 'main',
+    title: 'Главная',
+    img: 'img/Shape.png'
+    }
+] %}
+
+
+{% import 'components/Shop/Manufacturers/manufacturers.html' as manufacturers %}
+{% import 'components/Shop/Kinds/shoplist-kinds.html' as kinds %}
+{% import 'components/Shop/Card/shoplist-card.html' as card %}
+
+{% block manufacturers %}
+  {{ manufacturers.list (manufacturersItems) }}
+{% endblock %}
+
+{% block shoplistKinds %}
+  {{ kinds.list (kindsItems) }}
+{% endblock %}
+
+{% block shoplistCard %}
+  {% for item in cardItems %}
+  {{ card.cardList (item.img, item.title) }}
+  {% endfor %}
+{% endblock %}
+
+
+
+
+

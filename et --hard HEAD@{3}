@@ -1,0 +1,30 @@
+[33m1791224[m[33m ([m[1;36mHEAD -> [m[1;32mpetr[m[33m)[m HEAD@{0}: checkout: moving from dev to petr
+[33m1f2f438[m[33m ([m[1;31morigin/dev[m[33m, [m[1;31morigin/Artur[m[33m, [m[1;32mdev[m[33m)[m HEAD@{1}: pull: Fast-forward
+[33mde82a90[m[33m ([m[1;31morigin/Vero[m[33m)[m HEAD@{2}: checkout: moving from petr to dev
+[33m1791224[m[33m ([m[1;36mHEAD -> [m[1;32mpetr[m[33m)[m HEAD@{3}: commit: added shop page
+[33mde82a90[m[33m ([m[1;31morigin/Vero[m[33m)[m HEAD@{4}: reset: moving to HEAD
+[33mde82a90[m[33m ([m[1;31morigin/Vero[m[33m)[m HEAD@{5}: merge dev: Fast-forward
+[33maa9120d[m HEAD@{6}: checkout: moving from dev to petr
+[33mde82a90[m[33m ([m[1;31morigin/Vero[m[33m)[m HEAD@{7}: pull: Fast-forward
+[33maa9120d[m HEAD@{8}: checkout: moving from petr to dev
+[33maa9120d[m HEAD@{9}: reset: moving to HEAD
+[33maa9120d[m HEAD@{10}: merge dev: Fast-forward
+[33m81aff3f[m HEAD@{11}: checkout: moving from dev to petr
+[33maa9120d[m HEAD@{12}: commit: fixed all problems with colnflicts in main.scss
+[33mf8c874f[m HEAD@{13}: reset: moving to HEAD@{2}
+[33mc43c2a4[m HEAD@{14}: reset: moving to HEAD@{0}
+[33mc43c2a4[m HEAD@{15}: reset: moving to HEAD@{1}
+[33mf8c874f[m HEAD@{16}: commit (merge): added adaptive footer
+[33mc43c2a4[m HEAD@{17}: pull: Fast-forward
+[33m4f37ba4[m HEAD@{18}: checkout: moving from petr to dev
+[33m81aff3f[m HEAD@{19}: commit: changed footer.scss
+[33mb7d1e8e[m[33m ([m[1;31morigin/petr[m[33m)[m HEAD@{20}: reset: moving to HEAD
+[33mb7d1e8e[m[33m ([m[1;31morigin/petr[m[33m)[m HEAD@{21}: checkout: moving from petr to petr
+[33mb7d1e8e[m[33m ([m[1;31morigin/petr[m[33m)[m HEAD@{22}: checkout: moving from dev to petr
+[33m4f37ba4[m HEAD@{23}: checkout: moving from petr to dev
+[33mb7d1e8e[m[33m ([m[1;31morigin/petr[m[33m)[m HEAD@{24}: commit: made footer width adaptive
+[33m4f37ba4[m HEAD@{25}: checkout: moving from dev to petr
+[33m4f37ba4[m HEAD@{26}: checkout: moving from petr to dev
+[33m4f37ba4[m HEAD@{27}: checkout: moving from dev to petr
+[33m4f37ba4[m HEAD@{28}: checkout: moving from master to dev
+[33m01a237e[m[33m ([m[1;32mmaster[m[33m)[m HEAD@{29}: clone: from https://github.com/psborul/barbershop

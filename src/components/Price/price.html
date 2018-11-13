@@ -1,0 +1,28 @@
+{% extends 'components/Price/price-layout.html' %}
+
+{# title #}
+{% block priceTitle %}
+Прайс-лист
+{% endblock %}
+
+{# list #}
+{% block priceNav %}
+    {% include 'components/Price/Price-nav/price-nav.html' %}
+{% endblock %}
+
+{# bigtitle #}
+{% block priceBigspan %}
+Истинно мужская классика
+{% endblock %}
+
+{# columns #}
+
+{% block priceColumns %}
+    {% include 'components/Price/Price-columns/price-columns.html' %}
+{% endblock %}
+
+{# bottom #}
+
+{% block priceBottom %}
+    {% include 'components/Price/Price-bottom/price-bottom.html' %}
+{% endblock %}

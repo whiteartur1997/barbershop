@@ -1,0 +1,24 @@
+{% set forms = [
+{ for: 'date', name: 'Дата', id: 'date', place: '4.11.2018' },
+{ for: 'time', name: 'Время', id: 'time', place: '19:00' },
+{ for: 'name', name: 'Ваше имя', id: 'name', place: 'Инокентий' },
+{ for: 'tel', name: 'Телефон', id: 'tel', place: '+ 380660459322' }
+]
+%}
+
+<div class="hero-forms">
+    <h1 class="hero-forms__title hero-block__title">Записаться</h1>
+    <p class="hero-forms__descr">УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
+    <form class="hero-forms__forms">
+        <ul class="hero-forms__list reset-list">
+            {% for item in forms %}
+            <li class="hero-forms__item">
+                <label for="{{ item.for }}" class="hero-form__label">
+                    {{ item.name}}</label>
+                <input id="{{ item.id }}" type="data" class="hero-form__input" placeholder="{{ item.place }}">
+            </li>
+            {% endfor %}
+        </ul>
+        <button class="hero-forms__btn">Отправить</button>
+    </form>
+</div>

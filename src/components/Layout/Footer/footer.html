@@ -1,0 +1,51 @@
+{% extends 'components/Layout/Footer/footer-layout.html' %}
+{% set footerContactItems = [
+  {
+    title: 'Барбершоп «Бородинский»'
+  }, {
+    title: 'АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8'
+  }
+] %}
+
+
+{% set footerSocialItems = [
+  {
+    href: 'https://www.w3schools.com/cssref/css3_pr_align-items.asp',
+    img: 'img/vk.svg',
+    socials: 'vk',
+    imgsecond: 'img/vkcopy.svg',
+    socialssecond: 'vk'
+  }, {
+    href: '#',
+    img: 'img/facebook.svg',
+    socials: 'facebook',
+    imgsecond: 'img/facebookcopy.svg',
+    socialssecond: 'facebook'
+  }, {
+    href: '#',
+    img: 'img/instagram.svg',
+    socials: 'instagram',
+    imgsecond: 'img/instagramcopy.svg',
+    socialssecond: 'instagram'
+  }
+] %}
+
+
+{% import 'components/Layout/Footer/Contactlist/contact-list.html' as ContactList %}
+
+{% import 'components/Layout/Footer/social-list.html' as SocialsList %}
+
+{# contacts #}
+{% block navBody %}
+  {{ ContactList.list(footerContactItems) }}
+{% endblock %}
+{# ./contacts #}
+
+{# socials #}
+{% block socialTitle %}
+  Давайте дружить!
+{% endblock %}
+{% block socialsBody %}
+  {{ SocialsList.list(footerSocialItems) }}
+{% endblock %}
+{# ./contacts #}

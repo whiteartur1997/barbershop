@@ -1,0 +1,15 @@
+{% set page = "price-listpage" %}
+
+{% extends 'template.html' %}
+
+{% block title %}
+  Price
+{% endblock %}
+
+{% block page %}
+  price-listpage
+{% endblock %} 
+
+{% block content %}
+  {% include 'components/Price/price.html' %}  
+{% endblock %}

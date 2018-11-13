@@ -1,0 +1,19 @@
+{%
+set prices = [
+{ name: 'Стрижка', price: '1500 ₽' },
+{ name: 'СТРИЖКА БОРОДЫ', price: '500 ₽' },
+{ name: 'НАКРУТКА УСОВ', price: '350 ₽' }
+]
+%}
+
+<div class="price-right">
+    <h2 class="price-right__title">ЦЕНЫ НА УСЛУГИ НАШИХ МАСТЕРОВ:</h2>
+    <ul class="price-right__list reset-list">
+        {% for item in prices %}
+        <li class="price-right__item">
+            <span class="price-right__service">{{ item.name }}</span>
+            <span class="price-right__price">{{ item.price }}</span>
+        </li>
+        {% endfor %}
+    </ul>
+</div>

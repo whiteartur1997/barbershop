@@ -1,0 +1,63 @@
+<section class="shoplist">
+  <div class="container container--shoplist">
+    
+    <h1 class="shoplist__main-title">Средства для ухода</h1>
+    <div class="shoplist__pages">
+    {% for item in pagemap %}
+      <span class="{{ item.class }}"><a class="mainlink" href="index.html">{{ item.title }}</a></span>
+      <span class="pages_span"><img src="{{ item.img }}" alt="shape"></span>
+      <span class="{{ item.class }}">Магазин</span>
+      <span class="pages_span"><img src="{{ item.img }}" alt="shape"></span>
+      <span class="shoplist__page-selected">СРЕДСТВА ДЛЯ УХОДА</span>
+    {% endfor%}
+    </div>
+
+    <!-- maincontent -->
+    <div class="maincontent">
+
+        <!-- leftbar -->
+        <div class="shoplist__leftbar"> 
+
+          <!-- leftbar-top -->
+          <div class="shoplist__leftbar-top">
+            <h2 class="leftbar__main-title">Производители:</h2>
+            <ul class="leftbar__list reset-list">
+            {% block manufacturers %} {% endblock %}
+            </ul>
+          </div> <!-- ./leftbar-top -->
+        
+          <!-- leftbar-bottom -->
+          <div class="shoplist__leftbar-bottom">
+            <span class="leftbar__main-title">Группы товаров:</span>
+            <ul class="leftbar__list reset-list">
+            {% block shoplistKinds %} {% endblock %}
+            </ul>
+            <button class="kinds__leftbar--button btn">Показать</button>
+            </div> <!-- ./leftbar-bottom -->
+
+        </div> <!-- ./leftbar -->
+        
+        <!-- rightbar -->
+        <div class="shop__list-rightbar">
+          
+          <!-- cardlist -->
+          <ul class="shoplist__list--card reset-list">
+          {% block shoplistCard %} {% endblock %}
+          </ul> <!-- ./cardlist -->
+
+          <ul class="page-buttons__list reset-list">
+          {% for item in pagelistItems %}
+            <li class="page-buttons__items">
+              <a href="{{ item.href }}" class="page-buttons__link">
+                <button class="page-button">{{ item.title }}</button>
+              </a>
+            </li>
+            {% endfor %}
+          </ul>
+
+        </div><!-- ./rightbar  -->
+
+    </div> <!-- ./maincontent -->
+
+  </div>
+</section>

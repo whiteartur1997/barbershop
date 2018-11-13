@@ -1,0 +1,70 @@
+.hero-forms {
+    display: flex;
+    flex-direction: column;
+    @include medium {
+        padding-left: 35px;
+    }
+    @include large {
+        flex: 1 0 50%;
+        padding-left: 85px;
+    }
+
+}
+
+.hero-forms__descr {
+    margin-bottom: 24px;
+}
+
+.hero-forms__forms {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-forms__list {
+    display: flex;
+    flex-direction: column;
+    @include small {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    } 
+}
+
+.hero-forms__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-form__label {
+    @include font-size(14);
+    margin-left: 16px;
+    margin-bottom: 10px;
+}
+
+.hero-form__input {
+    width: 140px;
+    height: 42px;
+    padding: 13px 15px 13px 15px;
+    background: transparent;
+    border: 2px solid $primary;
+    margin-bottom: 14px;
+    font-weight: 700;
+    color: #4a4948;
+    opacity: .7;
+    outline: none;
+    line-height: 1;
+    @include font-size(12);
+
+    &:focus {
+        border-color: $secondary;
+    }
+}
+
+.hero-forms__btn {
+    @include btn;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    &:hover {
+        background: $secondary;
+    }
+}

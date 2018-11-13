@@ -1,0 +1,9 @@
+{% macro list(items = []) %}
+    {% for item in items %}
+  <li class="leftbar__item leftbar__item--kinds">
+    <input type="radio" name="hi" id="{{ item.title }}" class="kinds__input">
+    <label class="kinds__radio text--hover" for="{{ item.title }}"></label>
+    <label class="radio__text" for="{{ item.title }}">{{ item.title }}</label>
+  </li>
+  {% endfor %}
+{% endmacro %}

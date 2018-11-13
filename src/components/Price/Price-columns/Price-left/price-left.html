@@ -1,0 +1,17 @@
+{%
+set means = [
+{ name: 'Baxter of California' },
+{ name: 'Mr Natty' },
+{ name: 'Suavecito' },
+{ name: 'Malin+Goetz' }
+]
+%}
+
+<div class="price-left">
+    <h2 class="price-left__title">МЫ ИСПОЛЬЗУЕМ ТОЛЬКО ЛУЧШИЕ СРЕДСТВА:</h2>
+    <ul class="price-left__list reset-list">
+        {% for item in means %}
+        <li class="price-left__item">{{ item.name }}</li>
+        {% endfor %}
+    </ul>
+</div>
